@@ -1,5 +1,5 @@
 module.exports.config = {
-	name: "banking",
+	name: "doitien",
 	version: "1.0.0",
 	credits: "HungCho & Khánh Milo",
 	description: "",
