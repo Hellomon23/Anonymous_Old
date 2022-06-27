@@ -27,7 +27,7 @@ module.exports.run = async ({ api, event, args, getText }) => {
 	for (const idThread of allThread) {
 		if (isNaN(parseInt(idThread)) || idThread == event.threadID) ""
 		else {
-			api.sendMessage("[Admin]\n ♥️min hay dỗi🔥🔥\n zalo:0354766612\n\n" + args.join(" ") , idThread, (error, info) => {
+			api.sendMessage("[Admin] Anonymous \n\n" + args.join(" ") , idThread, (error, info) => {
 				if (error) cantSend.push(idThread);
 			});
 			count++;
