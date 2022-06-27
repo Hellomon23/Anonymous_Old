@@ -1,5 +1,5 @@
 module.exports.config = {
-  name: "subnautica1",
+  name: "sub1",
   version: "1.0.0",
   hasPermssion: 0,
   credits: "biết rồi còn nhìn làm gì",
