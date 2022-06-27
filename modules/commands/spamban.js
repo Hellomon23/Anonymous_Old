@@ -54,7 +54,7 @@ module.exports.handleReply = async function({ api, args, Users, event, handleRep
                     await Users.setData(uidUser, { data });
                     global.data.userBanned.delete(uidUser, 1);
 
-                    api.sendMessage(`»🌺Thông báo từ Admin ${name}🌺«\n\n🐸${nameU}\n✅Bạn Đã Được Gỡ Ban\n🥳Có thể sử dụng bot ngay bây giờ❤`, uidUser, () =>
+                    api.sendMessage(`»🌺Thông báo từ Admin🌺«\n\n🐸${nameU}\n✅Bạn Đã Được Gỡ Ban\n🥳Có thể sử dụng bot ngay bây giờ❤`, uidUser, () =>
                         api.sendMessage(`${api.getCurrentUserID()}`, () =>
                             api.sendMessage(`🌺UnBan🌺\n\n🔷${nameU} \n📩TID:${uidUser} `, threadID)));
                 } else {
