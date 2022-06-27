@@ -1,6 +1,6 @@
 const path = require("path");
 module.exports.config = {
-    name: "subnautica",
+    name: "sub",
     version: "2.2.0",
     hasPermssion: 0,
     credits: "Dàn code của D-Jukie, đàn cá của Heo Rừng UwU",
