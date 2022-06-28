@@ -109,7 +109,7 @@ registerFont(__dirname + `/tad/CaviarDreams.ttf`, {
     const imageBuffer = canvas.toBuffer();
    fs.writeFileSync(pathImg, imageBuffer);
   return api.sendMessage({
-    body: `🥳Bot đã hoạt động được ${hours} giờ ${minutes} phút ${seconds} giây.\n\n❯ Tổng người dùng: ${global.data.allUserID.length}\n❯ Tổng Nhóm: ${global.data.allThreadID.length}\n❯ Cpu đang sử dụng: ${pidusage.cpu.toFixed(1)}%\n❯ Ram đang sử dụng: ${byte2mb(pidusage.memory)}\n❯ Ping: ${Date.now() - timeStart}ms\n❯ ID Nhân Vật: ${id}`,
+    body: `🥳Bot đã hoạt động được ${hours} giờ ${minutes} phút ${seconds} giây.\n\n❯ Tổng người dùng: ${global.data.allUserID.length}\n❯ Tổng Nhóm: ${global.data.allThreadID.length}\n❯ Ram đang sử dụng: ${byte2mb(pidusage.memory)}\n❯ Ping: ${Date.now() - timeStart}ms\n❯ ID Nhân Vật: ${id}`,
     attachment: fs.createReadStream(pathImg)
   },
     event.threadID,
